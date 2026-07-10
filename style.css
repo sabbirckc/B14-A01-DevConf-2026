@@ -51,6 +51,7 @@
 .hero {
   position: relative;
   height: 650px;
+  background-image: url("./assets/banner.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +112,7 @@
   width: 100%;
   height: 300px;
   display: block;
-  border-radius: 12px;
+  border-radius:  12px;
 }
 .speaker-info {
   padding: 22px;
@@ -136,34 +137,46 @@
   margin-bottom: 60px;
 }
 /* Grid */
-.pricing-grid {
+.pricing-grid.pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 /* Card */
 .price-card {
-  background: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
-  padding: 40px 30px;
+  padding: 30px 30px;
+}
+.price-card-btn{
+  background: #2f66f6;
+  color: #fff;
+  width: 100px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.price-card-btn a{
+      text-decoration: none;
+}
+.price-card h6 {
+  color: #777;
 }
 /* Active Card */
 .price-card.active {
   background: #0f172a;
   color: #fff;
-  transform: scale(1.05);
 }
 .price-card.active h5,
 .price-card.active h2,
-.price-card.active li {
+.price-card.active li,
+.price-card.active h6,
+.price-card.active a {
   color: white;
 }
 /* Badge */
 .badge {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   background: #2563eb;
   color: #fff;
   padding: 6px 12px;
@@ -172,19 +185,107 @@
 }
 /* Title */
 .price-card h5 {
-  font-size: 18px;
   color: #777;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .price-card h2 {
   font-size: 48px;
-  margin-bottom: 25px;
 }
 /* List */
 .price-card ul {
+  padding-top: 20px;
   margin-bottom: 35px;
 }
 .price-card li {
   margin-bottom: 14px;
   color: #555;
+}
+/*Statistics Section css*/
+.statistics{
+    padding:100px 0;
+    background:#b2b6be;
+}
+.statistics-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+.statistics-heading h2{
+    color:#ffffff;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+.statistics-heading p{
+    color:#4e5869;
+    font-size:18px;
+    max-width:650px;
+    margin:auto;
+}
+/* Grid */
+.statistics-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+/* Card */
+.stat-card{
+    background:#4e5869;
+    border-radius:12px;
+    padding:45px 20px;
+    text-align:center;
+}
+/* Number */
+.stat-card h3{
+    color:#ffffff;
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+/* Text */
+.stat-card p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+/* ==========================
+        Footer
+========================== */
+.footer{
+    background:#0f172a;
+    padding:40px 0;
+
+}
+
+/* Top */
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:25px;
+
+}
+/* Social Icons */
+.footer-social{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    color: #ffffff;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+/* Divider */
+.footer hr{
+    border:none;
+    border-top:1px solid rgba(255,255,255,.15);
+}
+/*Bottom */
+.footer-bottom{
+    text-align:center;
+    padding-top:25px;
+}
+.footer-bottom p{
+    color:#cbd5e1;
+    font-size:15px;
 }

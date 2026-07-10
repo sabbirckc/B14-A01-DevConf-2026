@@ -7,6 +7,9 @@
     <title>DEVCONF 2026</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -15,8 +18,7 @@
         <nav class="navbar">
             <!-- Logo -->
             <div class="logo">
-                <h2>DEVCONF</h2>
-                <span>2026</span>
+                <img src="./assets/logo.png" alt="">
             </div>
             <!-- Navigation Links -->
             <ul class="nav-links">
@@ -97,13 +99,14 @@
                 Secure Your Spot
             </h2>
             <p class="pricing-subtitle">
-                Limited tickets available. Lock in your spot today.
+                Early-bird pricing ends August 15, 2026.
             </p>
             <div class="pricing-grid">
                 <!-- Starter -->
                 <div class="price-card">
-                    <h5>Starter</h5>
+                    <h5>STANDARD</h5>
                     <h2>$399</h2>
+                    <h6>Per person</h6>
                     <ul>
                         <li>Access to all conference days</li>
                         <li>Workshop Materials</li>
@@ -111,14 +114,15 @@
                         <li>Networking Sessions</li>
                         <li>VIP Lounge Access</li>
                     </ul>
-                    <a href="" class="btn">
-                        Get Started
-                    </a>
+                    <div class="price-card-btn">
+                        <a>Get standard</a>
+                    </div>
                 </div>
                 <!-- Pro -->
                 <div class="price-card active">
-                    <h5>Pro</h5>
+                    <h5>PRO</h5>
                     <h2>$749</h2>
+                    <h6>Per person</h6>
                     <ul>
                         <li>Everything in Starter</li>
                         <li>Workshop Certificate</li>
@@ -126,14 +130,15 @@
                         <li>Priority Seating</li>
                         <li>VIP Lounge Access</li>
                     </ul>
-                    <a href="" class="btn">
-                        Buy Now
-                    </a>
+                    <div class="price-card-btn">
+                        <a href="">Get Pro</a>
+                    </div>
                 </div>
                 <!-- Team -->
                 <div class="price-card">
-                    <h5>Team</h5>
+                    <h5>TEAM</h5>
                     <h2>$5,999</h2>
+                    <h6>Per person</h6>
                     <ul>
                         <li>Everything in Pro</li>
                         <li>Team Discount</li>
@@ -141,13 +146,72 @@
                         <li>Reserved Seating</li>
                         <li>Private Networking</li>
                     </ul>
-                    <a href="" class="btn">
-                        Contact Us
-                    </a>
+                    <div class="price-card-btn">
+                        <a>Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--Statistics Section-->
+    <section class="statistics">
+        <div class="container">
+            <div class="statistics-heading">
+                <h2>Conference in Numbers</h2>
+                <p>
+                    Join thousands of developers, engineers, and innovators
+                    from around the world.
+                </p>
+            </div>
+            <div class="statistics-grid">
+                <!-- Card 1 -->
+                <div class="stat-card">
+                    <h3>4,000+</h3>
+                    <p>Attendees</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>Industry Speakers</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="stat-card">
+                    <h3>35</h3>
+                    <p>Hands-on Workshops</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="stat-card">
+                    <h3>15</h3>
+                    <p>Global Sponsors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer Section-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Logo -->
+                <div class="footer-logo">
+                    <img src="./assets/footer-logo.png" alt="">
+                </div>
+                <!-- Social Media -->
+                <div class="footer-social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 DEVCONF. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
